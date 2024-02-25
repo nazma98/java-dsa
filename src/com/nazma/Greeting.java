@@ -6,7 +6,8 @@ public class Greeting {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your name");
         String name = scanner.next();
-        custom_greeting(name);
+        String customGreet = custom_greeting(name);
+        System.out.println(customGreet);
     }
 
     static void greeting(){
@@ -16,7 +17,7 @@ public class Greeting {
         System.out.println("Hello "+ name + ", Good morning!");
     }
 
-    static void custom_greeting(String name){
-        System.out.println("Ohayo " + name);
+    static String custom_greeting(String name){
+        return "Ohayo  " + name;
     }
 }
